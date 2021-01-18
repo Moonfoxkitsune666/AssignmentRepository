@@ -826,6 +826,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4409727466913308490, guid: 6673d6791bace5341a1cd89a61641c0d, type: 3}
+      propertyPath: impactSoundVolume
+      value: 0.074
+      objectReference: {fileID: 0}
     - target: {fileID: 5629292802525486941, guid: 6673d6791bace5341a1cd89a61641c0d, type: 3}
       propertyPath: m_RootOrder
       value: 1

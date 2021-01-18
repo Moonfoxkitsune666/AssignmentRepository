@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3644636724217458979}
   - component: {fileID: 7852242170974885375}
   - component: {fileID: 5779302757011012514}
-  - component: {fileID: -128828531227088188}
+  - component: {fileID: -2275955653744869008}
   m_Layer: 0
   m_Name: truck
   m_TagString: Untagged
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 4
---- !u!114 &-128828531227088188
+--- !u!114 &-2275955653744869008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,11 +203,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4475530979105092077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 108cdb0ee8e1ed542ac121b12e22c759, type: 3}
+  m_Script: {fileID: 11500000, guid: 8673cce9884e4d047a4e21bf9e25185f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  explosionSound: {fileID: 0}
-  explosionSoundVolume: 0.7
-  Death: {fileID: 0}
-  explosionDuration: 1
+  health: 50
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  bulletPrefab: {fileID: 4551044474697187465, guid: 229a9c4d8791b57439b559f49ab3a728, type: 3}
+  bulletSpeed: 7

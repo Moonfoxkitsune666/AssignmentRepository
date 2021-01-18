@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9020923669608692161}
   - component: {fileID: -8411943787861110339}
   - component: {fileID: 1826804868255503456}
+  - component: {fileID: 6570095481853349929}
   m_Layer: 0
   m_Name: Police
   m_TagString: Untagged
@@ -181,3 +182,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!114 &6570095481853349929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5489555777672026103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8673cce9884e4d047a4e21bf9e25185f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  bulletPrefab: {fileID: 4551044474697187465, guid: 229a9c4d8791b57439b559f49ab3a728, type: 3}
+  bulletSpeed: 7

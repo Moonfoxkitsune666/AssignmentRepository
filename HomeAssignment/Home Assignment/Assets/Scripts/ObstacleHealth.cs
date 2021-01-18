@@ -7,8 +7,8 @@ public class ObstacleHealth : MonoBehaviour
     [SerializeField] float health = 100f;
     [SerializeField] AudioClip explosionSound;
     [SerializeField] [Range(0, 1)] float explosionSoundVolume = 0.7f;
-    [SerializeField] GameObject Death;
-    [SerializeField] float explosionDuration = 1f;
+    //[SerializeField] GameObject Death;
+    //[SerializeField] float explosionDuration = 1f;
 
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
@@ -32,9 +32,9 @@ public class ObstacleHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-        GameObject explosion = Instantiate(Death, transform.position, Quaternion.identity);
-        AudioSource.PlayClipAtPoint(explosionSound, Camera.main.transform.position, explosionSoundVolume);
-        Destroy(explosion, explosionDuration);
+        //GameObject explosion = Instantiate(Death, transform.position, Quaternion.identity);
+        //AudioSource.PlayClipAtPoint(explosionSound, Camera.main.transform.position, explosionSoundVolume);
+        //Destroy(explosion, explosionDuration);
     }
 
     // Start is called before the first frame update
