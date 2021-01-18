@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
     [SerializeField] float health = 50f;
     [SerializeField] AudioClip impactSound;
     [SerializeField] [Range(0, 1)] float impactSoundVolume = 0.7f;
+    [SerializeField] AudioClip boomSound;
+    [SerializeField] [Range(0, 1)] float boomSoundVolume = 0.7f;
+    [SerializeField] GameObject BoomVFX;
+    [SerializeField] float boomDuration = 1f;
 
     float xMin, xMax, yMin, yMax;
   
@@ -86,6 +90,9 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+        GameObject boom = Instantiate(BoomVFX, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(boomSound, Camera.main.transform.position, boomSoundVolume);
+        Destroy(boom, boomDuration);
     }
 
 }

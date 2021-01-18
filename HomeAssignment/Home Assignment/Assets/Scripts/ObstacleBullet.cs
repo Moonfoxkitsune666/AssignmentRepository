@@ -10,10 +10,10 @@ public class ObstacleBullet : MonoBehaviour
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] float bulletSpeed = 0.3f;
-    //[SerializeField] AudioClip explosionSound;
-    //[SerializeField] [Range(0, 1)] float explosionSoundVolume = 0.7f;
-    //[SerializeField] GameObject DeathVFX;
-    //[SerializeField] float explosionDuration = 1f;
+    [SerializeField] AudioClip explosionSound;
+    [SerializeField] [Range(0, 1)] float explosionSoundVolume = 0.7f;
+    [SerializeField] GameObject DeathVFX;
+    [SerializeField] float explosionDuration = 1f;
 
 
     private void OnTriggerEnter2D(Collider2D otherObject)
@@ -45,13 +45,9 @@ public class ObstacleBullet : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-
-        //Explosion VFX & Sound
-        //GameObject explosion = Instantiate(DeathVFX, transform.position, Quaternion.identity);
-        //AudioSource.PlayClipAtPoint(obstacleExplosionSound, Camera.main.transform.position, obstacleExplosionSoundVolume);
-
-        //Destroy explosion after 1 second
-        //Destroy(explosion, explosionDuration);
+        GameObject explosion = Instantiate(DeathVFX, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(explosionSound, Camera.main.transform.position, explosionSoundVolume);
+        Destroy(explosion, explosionDuration);
     }
 
     // Start is called before the first frame update

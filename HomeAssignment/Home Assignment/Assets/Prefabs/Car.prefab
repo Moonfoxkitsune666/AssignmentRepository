@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4409727466913308490}
   - component: {fileID: 3822474503950297732}
   - component: {fileID: 8408214918863088522}
+  - component: {fileID: 2716081084443529823}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -102,6 +103,10 @@ MonoBehaviour:
   health: 50
   impactSound: {fileID: 8300000, guid: 488cbe508e9417d4d8fce0ac7543ac30, type: 3}
   impactSoundVolume: 0.7
+  boomSound: {fileID: 8300000, guid: 1bdf3e2cc1eee8646904b0ae0e55499f, type: 3}
+  boomSoundVolume: 0.7
+  BoomVFX: {fileID: 1193687523412745840, guid: 5dca88ba411dbec42b287addfd810b5f, type: 3}
+  boomDuration: 1
 --- !u!50 &3822474503950297732
 Rigidbody2D:
   serializedVersion: 4
@@ -167,3 +172,16 @@ PolygonCollider2D:
       - {x: 0.39, y: -0.96}
       - {x: 0.45999998, y: -0.59999996}
       - {x: 0.45999998, y: -0.58}
+--- !u!114 &2716081084443529823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442205617422807932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fceb41949ceb01b4bae3fce86621201f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100

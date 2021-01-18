@@ -191,3 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 108cdb0ee8e1ed542ac121b12e22c759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  explosionSound: {fileID: 8300000, guid: 48608eb40374fd241a0f7eb57f49e7c2, type: 3}
+  explosionSoundVolume: 0.7
+  Death: {fileID: 1193687523412745840, guid: 5dca88ba411dbec42b287addfd810b5f, type: 3}
+  explosionDuration: 1
