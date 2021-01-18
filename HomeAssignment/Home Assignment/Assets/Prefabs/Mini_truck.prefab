@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5527509823937887389}
   - component: {fileID: -841394706321077144}
   - component: {fileID: 3730796882118234130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mini_truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

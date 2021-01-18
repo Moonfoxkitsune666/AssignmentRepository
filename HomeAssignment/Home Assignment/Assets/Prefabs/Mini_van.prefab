@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4484852442868293088}
   - component: {fileID: -3187777151059839340}
   - component: {fileID: -2568293946049196463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mini_van
   m_TagString: Untagged
   m_Icon: {fileID: 0}
