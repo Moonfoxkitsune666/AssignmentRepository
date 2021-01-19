@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 0.7f;
-    [SerializeField] float health = 50f;
+    [SerializeField] int health = 50;
     [SerializeField] AudioClip impactSound;
     [SerializeField] [Range(0, 1)] float impactSoundVolume = 0.7f;
     [SerializeField] AudioClip boomSound;
@@ -79,6 +79,7 @@ public class Player : MonoBehaviour
         //Reduce Health by Damage Given
         health -= dmgDealer.GetDamage();
         AudioSource.PlayClipAtPoint(impactSound, Camera.main.transform.position, impactSoundVolume);
+        FindObjectOfType<GameSession>().PlayerHealth(health);
 
         //If Player Health is equal of lower than 0, Player dies
         if (health <= 0)

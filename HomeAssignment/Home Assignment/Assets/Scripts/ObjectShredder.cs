@@ -17,7 +17,7 @@ public class ObjectShredder : MonoBehaviour
         {
             print("Added point");
             Destroy(otherObject.gameObject);
-            FindObjectOfType<GameSession>().AddToScore(scoreValue);
+            FindObjectOfType<GameSession>().GameScore(scoreValue);
         }
     }
 }

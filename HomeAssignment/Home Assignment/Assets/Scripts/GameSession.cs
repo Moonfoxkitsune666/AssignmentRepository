@@ -35,14 +35,19 @@ public class GameSession : MonoBehaviour
         return health;
     }
 
-    public void AddToScore(int scoreValue)
+    public void GameScore(int scoreValue)
     {
 
         score += scoreValue;
         print(score);
+
+        if(score == 100)
+        {
+            FindObjectOfType<Level>().LoadGameWin();
+        }
     }
 
-    public void AddToHealth(int healthValue)
+    public void PlayerHealth(int healthValue)
     {
         health = healthValue;
         print(health);

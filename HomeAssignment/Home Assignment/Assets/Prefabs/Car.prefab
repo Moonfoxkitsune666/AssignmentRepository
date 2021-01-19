@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  padding: 0.7
+  padding: 1
   health: 50
   impactSound: {fileID: 8300000, guid: 488cbe508e9417d4d8fce0ac7543ac30, type: 3}
   impactSoundVolume: 0.7
