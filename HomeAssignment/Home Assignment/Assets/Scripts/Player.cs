@@ -93,6 +93,7 @@ public class Player : MonoBehaviour
         GameObject boom = Instantiate(BoomVFX, transform.position, Quaternion.identity);
         AudioSource.PlayClipAtPoint(boomSound, Camera.main.transform.position, boomSoundVolume);
         Destroy(boom, boomDuration);
+        FindObjectOfType<Level>().LoadGameOver();
     }
 
 }
