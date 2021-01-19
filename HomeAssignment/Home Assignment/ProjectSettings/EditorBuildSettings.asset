@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CarGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 9e8c756052a8ba1458d2857a8bfc8419
+  - enabled: 1
+    path: Assets/Scenes/GameWin.unity
+    guid: 1c0399cd191db2044af21f20404d7047
   m_configObjects: {}
