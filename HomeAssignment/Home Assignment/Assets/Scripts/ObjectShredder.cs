@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ObjectShredder : MonoBehaviour
 {
-    [SerializeField] GameObject obstacleBullet;
     [SerializeField] int scoreValue = 5;
 
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
-        
-        if (obstacleBullet)
+        if(otherObject.name == "rock 2" || otherObject.name == "rock 2(Clone)")
         {
             print("Deleted Bullet");
             Destroy(otherObject.gameObject);
